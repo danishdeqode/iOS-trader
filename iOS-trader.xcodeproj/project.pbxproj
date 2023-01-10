@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		07949FF5296C71570071F149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF3296C71570071F149 /* Main.storyboard */; };
 		07949FF7296C71580071F149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF6296C71580071F149 /* Assets.xcassets */; };
 		07949FFA296C71580071F149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF8296C71580071F149 /* LaunchScreen.storyboard */; };
+		0794A010296C7B570071F149 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0794A00E296C7B570071F149 /* LogoViewController.swift */; };
+		0794A011296C7B570071F149 /* LogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0794A00F296C7B570071F149 /* LogoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		07949FF6296C71580071F149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07949FF9296C71580071F149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07949FFB296C71580071F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0794A00E296C7B570071F149 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		0794A00F296C7B570071F149 /* LogoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		07949FEC296C71570071F149 /* iOS-trader */ = {
 			isa = PBXGroup;
 			children = (
-				07949FED296C71570071F149 /* AppDelegate.swift */,
-				07949FEF296C71570071F149 /* SceneDelegate.swift */,
-				07949FF1296C71570071F149 /* ViewController.swift */,
-				07949FF3296C71570071F149 /* Main.storyboard */,
-				07949FF6296C71580071F149 /* Assets.xcassets */,
-				07949FF8296C71580071F149 /* LaunchScreen.storyboard */,
+				0794A00D296C7AD70071F149 /* Logo */,
+				0794A005296C75BA0071F149 /* Components */,
+				0794A002296C718C0071F149 /* Screen */,
+				0794A001296C716E0071F149 /* Application */,
+				0794A004296C71B10071F149 /* Storyboard */,
+				0794A003296C71A10071F149 /* Resources */,
 				07949FFB296C71580071F149 /* Info.plist */,
 			);
 			path = "iOS-trader";
+			sourceTree = "<group>";
+		};
+		0794A001296C716E0071F149 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				07949FED296C71570071F149 /* AppDelegate.swift */,
+				07949FEF296C71570071F149 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0794A002296C718C0071F149 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				07949FF1296C71570071F149 /* ViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0794A003296C71A10071F149 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07949FF6296C71580071F149 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0794A004296C71B10071F149 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				07949FF3296C71570071F149 /* Main.storyboard */,
+				07949FF8296C71580071F149 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0794A005296C75BA0071F149 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0794A006296C75CC0071F149 /* Button */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0794A006296C75CC0071F149 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		0794A00D296C7AD70071F149 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				0794A00E296C7B570071F149 /* LogoViewController.swift */,
+				0794A00F296C7B570071F149 /* LogoViewController.xib */,
+			);
+			path = Logo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +165,7 @@
 				};
 			};
 			buildConfigurationList = 07949FE5296C71570071F149 /* Build configuration list for PBXProject "iOS-trader" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -128,6 +190,7 @@
 				07949FFA296C71580071F149 /* LaunchScreen.storyboard in Resources */,
 				07949FF7296C71580071F149 /* Assets.xcassets in Resources */,
 				07949FF5296C71570071F149 /* Main.storyboard in Resources */,
+				0794A011296C7B570071F149 /* LogoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +204,7 @@
 				07949FF2296C71570071F149 /* ViewController.swift in Sources */,
 				07949FEE296C71570071F149 /* AppDelegate.swift in Sources */,
 				07949FF0296C71570071F149 /* SceneDelegate.swift in Sources */,
+				0794A010296C7B570071F149 /* LogoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
