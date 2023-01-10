@@ -15,6 +15,9 @@
 		07949FFA296C71580071F149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF8296C71580071F149 /* LaunchScreen.storyboard */; };
 		0794A010296C7B570071F149 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0794A00E296C7B570071F149 /* LogoViewController.swift */; };
 		0794A011296C7B570071F149 /* LogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0794A00F296C7B570071F149 /* LogoViewController.xib */; };
+		C3B93B01296D8F6D00FED50F /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B93B00296D8F6D00FED50F /* TextFieldExtension.swift */; };
+		C3EFDBB5296D7BA000D382A3 /* AppTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EFDBB4296D7BA000D382A3 /* AppTextField.xib */; };
+		C3EFDBB7296D7BFD00D382A3 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFDBB6296D7BFD00D382A3 /* AppTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		07949FFB296C71580071F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0794A00E296C7B570071F149 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 		0794A00F296C7B570071F149 /* LogoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoViewController.xib; sourceTree = "<group>"; };
+		C3B93B00296D8F6D00FED50F /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		C3EFDBB4296D7BA000D382A3 /* AppTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppTextField.xib; sourceTree = "<group>"; };
+		C3EFDBB6296D7BFD00D382A3 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,7 @@
 		07949FEC296C71570071F149 /* iOS-trader */ = {
 			isa = PBXGroup;
 			children = (
-				0794A00D296C7AD70071F149 /* Logo */,
+				C3B93AFF296D8F5C00FED50F /* Helper */,
 				0794A005296C75BA0071F149 /* Components */,
 				0794A002296C718C0071F149 /* Screen */,
 				0794A001296C716E0071F149 /* Application */,
@@ -108,16 +114,10 @@
 		0794A005296C75BA0071F149 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0794A006296C75CC0071F149 /* Button */,
+				C3EFDBB3296D7B8A00D382A3 /* AppTextField */,
+				0794A00D296C7AD70071F149 /* Logo */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		0794A006296C75CC0071F149 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 		0794A00D296C7AD70071F149 /* Logo */ = {
@@ -127,6 +127,23 @@
 				0794A00F296C7B570071F149 /* LogoViewController.xib */,
 			);
 			path = Logo;
+			sourceTree = "<group>";
+		};
+		C3B93AFF296D8F5C00FED50F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C3B93B00296D8F6D00FED50F /* TextFieldExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C3EFDBB3296D7B8A00D382A3 /* AppTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C3EFDBB4296D7BA000D382A3 /* AppTextField.xib */,
+				C3EFDBB6296D7BFD00D382A3 /* AppTextField.swift */,
+			);
+			path = AppTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +208,7 @@
 				07949FF7296C71580071F149 /* Assets.xcassets in Resources */,
 				07949FF5296C71570071F149 /* Main.storyboard in Resources */,
 				0794A011296C7B570071F149 /* LogoViewController.xib in Resources */,
+				C3EFDBB5296D7BA000D382A3 /* AppTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +222,9 @@
 				07949FF2296C71570071F149 /* ViewController.swift in Sources */,
 				07949FEE296C71570071F149 /* AppDelegate.swift in Sources */,
 				07949FF0296C71570071F149 /* SceneDelegate.swift in Sources */,
+				C3B93B01296D8F6D00FED50F /* TextFieldExtension.swift in Sources */,
 				0794A010296C7B570071F149 /* LogoViewController.swift in Sources */,
+				C3EFDBB7296D7BFD00D382A3 /* AppTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +379,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +408,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

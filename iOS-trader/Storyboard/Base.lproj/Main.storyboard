@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,52 +13,69 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-uC-QVR">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-EX-Q7o">
-                                <rect key="frame" x="0.0" y="741.33333333333337" width="393" height="76.666666666666629"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-EX-Q7o">
+                                <rect key="frame" x="10" y="676" width="394" height="166"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="534" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLm-JT-3Ad" customClass="customUITextField" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="48.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-43-bpt">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                        <rect key="frame" x="0.0" y="58.5" width="394" height="49"/>
+                                        <color key="backgroundColor" red="0.60838967560000001" green="0.1121883914" blue="0.1236982122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4D-Ge-0jh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdk-n4-jcH">
-                                        <rect key="frame" x="156.66666666666666" y="42.333333333333258" width="79.666666666666657" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="117.5" width="394" height="48.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.25396852130000003" blue="0.31113079900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SignUp"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="4aA-43-bpt" secondAttribute="trailing" id="DCK-z8-Cuw"/>
-                                    <constraint firstItem="4aA-43-bpt" firstAttribute="leading" secondItem="TQJ-EX-Q7o" secondAttribute="leading" id="Twp-g9-JVE"/>
+                                    <constraint firstAttribute="height" constant="166" id="cCL-F2-byu"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dF1-uC-QVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Ee-nW-lfb"/>
-                            <constraint firstItem="TQJ-EX-Q7o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IDn-6g-9GG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dF1-uC-QVR" secondAttribute="bottom" id="TRs-rv-pPI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TQJ-EX-Q7o" secondAttribute="trailing" id="afh-SI-vMy"/>
-                            <constraint firstItem="dF1-uC-QVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f6u-eE-8iG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dF1-uC-QVR" secondAttribute="trailing" id="hQp-ps-l6j"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TQJ-EX-Q7o" secondAttribute="bottom" id="yFE-vm-BMB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TQJ-EX-Q7o" secondAttribute="bottom" constant="20" id="5eH-vc-bTx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TQJ-EX-Q7o" secondAttribute="trailing" constant="10" id="amU-pS-Fq7"/>
+                            <constraint firstItem="dF1-uC-QVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qy5-2b-msg"/>
+                            <constraint firstItem="dF1-uC-QVR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s4q-oS-Xrq"/>
+                            <constraint firstItem="TQJ-EX-Q7o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sQn-Md-VON"/>
+                            <constraint firstItem="dF1-uC-QVR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tTb-Rd-OIY"/>
+                            <constraint firstAttribute="bottom" secondItem="dF1-uC-QVR" secondAttribute="bottom" id="xy7-7S-tDd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="kLm-JT-3Ad" id="h9h-q8-dzg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="4"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="3.3482142857142856"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="kLm-JT-3Ad">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+    </designables>
     <resources>
-        <image name="splash" width="266.66665649414062" height="474"/>
+        <image name="splash" width="266.5" height="474"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
